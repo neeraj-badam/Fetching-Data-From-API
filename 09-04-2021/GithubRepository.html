@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="FetchRepository.js"  type="text/javascript"></script>
+    <style>
+        body{
+            margin:0;
+            box-sizing: 0;
+        }
+        .container{
+            border:none;
+            }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="row ">
+            <div class="col-lg-12 col-sm-12 ">  
+               <h2 align="center">Fetch Repositories from Github using their usernames</h2>    
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-6 col-sm-6 ">  
+                <h1 style="margin-left:70px">Enter Github Username :</h1> 
+            </div>
+            <div class="col-6 col-lg-6 col-sm-6">  
+                <input type="text" name="username" id="username" class="form-control">
+            </div>
+        </div>
+        <div class="row" style="justify-content: space-around;">
+            <div class="col-lg-6 col-sm-6">
+                <div>
+                    <input type="button" value=" Get User's Reports " class="bg-primary text-white btn-block btn-lg" onclick="FetchRepositories()" >
+                </div> 
+            </div>
+        </div>
+        <div class="row" style="justify-content: space-around;">
+            <div class="col-lg-6 col-sm-6">
+                <div>
+                    <h1 style="visibility:hidden;" id="nameOfUser"></h1>
+                </div> 
+            </div>
+        </div>
+        <div id="displayRepositories">
+            
+        </div>
+    </div>
+</body>
+</html>

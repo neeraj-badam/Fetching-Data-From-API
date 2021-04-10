@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="Fetch.js"  type="text/javascript"></script>
+    <style>
+        body{
+            margin:0;
+            box-sizing: 0;
+        }
+        .container{
+            border:none;
+            }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="row ">
+            <div class="col-lg-12 col-sm-12 ">  
+               <h1 align="center">Weather Reports</h1>    
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-lg-6 col-sm-6 ">  
+                <h1 style="margin-left:70px">Enter City :</h1> 
+            </div>
+            <div class="col-6 col-lg-6 col-sm-6">  
+                <input type="text" name="city" id="city" class="form-control">
+            </div>
+        </div>
+        <div class="row" style="justify-content: space-around;">
+            <div class="col-lg-6 col-sm-6">
+                <div>
+                    <input type="button" value=" Get Weather Reports " class="bg-primary text-white btn-block btn-lg" onclick="WeatherReport()" >
+                </div> 
+            </div>
+        </div>
+        <div id="displayTable">
+            
+        </div>
+    </div>
+</body>
+</html>
